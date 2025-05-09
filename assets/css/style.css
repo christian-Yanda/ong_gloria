@@ -1,47 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f7;
+    color: #333;
+    margin: 0;
+}
 
-        .responsive-text {
-            font-size: 3vw; /* Taille de police responsive basée sur la largeur de la fenêtre */
-        }
-        .responsive-title {
-            font-size: 2vw; /* Taille de police responsive basée sur la largeur de la fenêtre */
-        }
-        .responsive-title1 {
-            font-size: 1.5vw; /* Taille de police responsive basée sur la largeur de la fenêtre */
-        }
-        .responsive-paragraph {
-            font-size: 1vw; /* Taille de police responsive basée sur la largeur de la fenêtre */
-        }
-        .overlay-text {
-            position: absolute;
-            top: 50%;
-            left: 35%;
-            transform: translate(-50%, -50%);    
-            padding: 10px;
-        }
-        a {
-            text-decoration: none;
-            font-weight: bolder;
-            color: white;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .link-btn{
-            padding-left: 40px;
-            padding-right: 40px;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            justify-content: center;
-            border: 1px solid;
-            border-left: 30px;
-            border-right: 30px;
-        }
+.responsive-title1 {
+    font-size: 2vw; /* Taille de police responsive basée sur la largeur de la fenêtre */
+    font-family: DamingaBold;
+    font-weight:bolder;
+    text-align: center;
+}
+.responsive-title2 {
+    font-size: 1.8vw; /* Taille de police responsive basée sur la largeur de la fenêtre */
+    font-family: Daminga;
+    font-weight:bolder;
+    text-align: left;
+}
 
-        svg {
-            width: 32px;
-            height: 32px;
-            fill: white;
-        }
-        svg:hover{
-            transform: scale(1.1);
-        }
+p { /*paragraphe */
+    font-family: Century Gothic;
+    font-size: 1.6em;
+    line-height: 1.6;
+}
+.container-contenu{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.container-contenu2{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);    
+    padding: 10px;
+    font-size: 5vw;
+}
+a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+}
+.link-btn{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: center;
+    border: 1px solid;
+    border-left: 30px;
+    border-right: 30px;
+}
+
+svg {
+    width: 32px;
+    height: 32px;
+    fill: white;
+}
+svg:hover{
+    transform: scale(1.1);
+}
+
+
+/****************************************************************/
+/* GESTION DE MEDIA */
+@media (min-width: 320px) and (max-width: 480px) {              
+    p { /*paragraphe */
+        font-size: 1em;
+        font-family: Century Gothic;
+        line-height: 1.6;
+    }
+    .responsive-title1 {
+        font-size: 5.5vw; /* Taille de police responsive basée sur la largeur de la fenêtre */
+        font-weight:bolder;
+        text-align: center;
+    }
+    .responsive-title2 {
+        font-size: 4.5vw; /* Taille de police responsive basée sur la largeur de la fenêtre */
+    }
+    .container-contenu2{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    /* taille ecran compris entre 320px et 480px */           
+} 
+
+@media (min-width: 481px) and (max-width <= 767px) {    
+    
+    /* taille ecran compris entre 481px et 767px */ 
+}
+
+@media (min-width: 768px) and (max-width: 1920px) {              
+    
+/* taille ecran compris entre 767px et 1920px */           
+}

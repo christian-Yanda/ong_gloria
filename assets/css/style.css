@@ -1,0 +1,47 @@
+
+        .responsive-text {
+            font-size: 3vw; /* Taille de police responsive basée sur la largeur de la fenêtre */
+        }
+        .responsive-title {
+            font-size: 2vw; /* Taille de police responsive basée sur la largeur de la fenêtre */
+        }
+        .responsive-title1 {
+            font-size: 1.5vw; /* Taille de police responsive basée sur la largeur de la fenêtre */
+        }
+        .responsive-paragraph {
+            font-size: 1vw; /* Taille de police responsive basée sur la largeur de la fenêtre */
+        }
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 35%;
+            transform: translate(-50%, -50%);    
+            padding: 10px;
+        }
+        a {
+            text-decoration: none;
+            font-weight: bolder;
+            color: white;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .link-btn{
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            justify-content: center;
+            border: 1px solid;
+            border-left: 30px;
+            border-right: 30px;
+        }
+
+        svg {
+            width: 32px;
+            height: 32px;
+            fill: white;
+        }
+        svg:hover{
+            transform: scale(1.1);
+        }

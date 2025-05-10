@@ -26,7 +26,7 @@ p { /*paragraphe */
 .container-contenu{
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 100px;
 }
 .container-contenu2{
@@ -34,11 +34,7 @@ p { /*paragraphe */
     padding-right: 200px;
 }
 
-.overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 35%;
-    transform: translate(-50%, -50%);    
+.overlay-text { 
     padding: 10px;
     font-size: 5vw;
 }
@@ -70,6 +66,31 @@ svg:hover{
     transform: scale(1.1);
 }
 
+/* Footer */
+footer .reseaux-sociaux i{
+    color: rgb(103, 110, 110);
+    font-size: 24px;
+}
+
+footer .reseaux-sociaux i:hover{
+    color: crimson;
+}
+
+footer .Nous-joindre i{
+    color: rgb(153, 43, 43);
+    font-size: 24px;
+}
+footer a{
+    color: #f0f4f7;
+}
+footer li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+/*fin footer */
+
 
 /****************************************************************/
 /* GESTION DE MEDIA */
@@ -80,18 +101,17 @@ svg:hover{
         line-height: 1.6;
     }
     .responsive-title1 {
-        font-size: 5.5vw; /* Taille de police responsive basée sur la largeur de la fenêtre */
+        font-size: 5.5vw; /* Taille de police titre 1 responsive basée sur la largeur de la fenêtre */
         font-weight:bolder;
         text-align: center;
     }
     .responsive-title2 {
-        font-size: 4.5vw; /* Taille de police responsive basée sur la largeur de la fenêtre */
+        font-size: 4.5vw; /* Taille de police titre 2 responsive basée sur la largeur de la fenêtre */
     }
     .container-contenu2{
         padding-left: 15px;
         padding-right: 15px;
     }
-    
     /* taille ecran compris entre 320px et 480px */           
 } 
 

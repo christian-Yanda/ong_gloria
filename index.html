@@ -29,78 +29,50 @@
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 </head>
 
-<body class="font-body">
-    <!-- barre de navgation-->
-    <nav class="navbar navbar-expand-sm d-flex flex-column row-gap-2 navbar-dark bg-dark">
-        <div class="container-fluid">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="ms-md-4">
-                            <div class="row">
-                                <div class="col-6">
-                                    <a class="navbar-brand" href="#">Logo</a>                                                                    
-                                </div>
-                                <div class=" col-6">
-                                    <div class="d-flex justify-content-end">
-                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                                            <span class="navbar-toggler-icon"></span>
-                                        </button>
-                                    </div> 
-                                </div>
-                            </div>                                                   
-                        </div>  
+<body class="body">
+
+    <header id="header" class="header d-flex align-items-center sticky-top" style=" background-color: #1f233b;">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+    
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+                <h1 class="sitename text-decoration-none text-light">Gloria</h1>
+            </a>
+            <!-- barre de navgation-->
+            <nav class="navbar navbar-expand-sm d-flex flex-column row-gap-2">
+                <div class="offcanvas offcanvas-start d-xl-none" id="demo">
+                    <div class="offcanvas-header">
+                      <h1 class="offcanvas-title">Menu</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
                     </div>
-                    <div class="col-md-6">
-                        <div class="collapse navbar-collapse ps-4 pt-1 pb-1" id="mynavbar" style="background-color: rgb(165, 62, 62);">
-                            <ul class="navbar-nav me-auto " >
-                                <li class="nav-item">
-                                    <div class="dropdown">
-                                        <button type="button" class=" p-0  btn justify-content-center text-light dropdown-toggle border-0" data-bs-toggle="dropdown">
-                                            A propos
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Qui sommes-nous?</a></li>
-                                            <li><a class="dropdown-item" href="#">Ce que nous faisons</a></li>
-                                            <li><a class="dropdown-item" href="#">Conseil d'Admiistion</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="javascript:void(0)">Histoire d'impact</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="javascript:void(0)">Actuaités</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="javascript:void(0)">Publications</a>
-                                </li>
-                                <li class="nav-item">
-                                    <button type="button" class="btn btn-secondary bg-transparent border-0 hover" data-bs-toggle="collapse" data-bs-target="#btnRecherche">
-                                        <i class="bi bi-search"></i>
-                                    </button>
-                                </li>
-                            </ul>                                       
-                        </div>
+                    <div class="offcanvas-body">
+                      <p>Some text lorem ipsum.</p>
+                      <p>Some text lorem ipsum.</p>
+                      <p>Some text lorem ipsum.</p>
+                      <button class="btn btn-secondary" type="button">A Button</button>
                     </div>
-                </div>
-            </div>
+                  </div>
+                  
+                <div class="container-fluid d-xl-none">
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                        <i class="bi bi-list bi-0-square"></i>
+                    </button>
+                </div>                  
+            </nav>
+            <!-- Contenu principl de la page -->
         </div>
-            <div class="collapse" id="btnRecherche">
-                <form class=" d-flex ">
-                    <input class="form-control me-2" type="text " placeholder="Search ">
-                    <button class="btn btn-primary " type="button ">Search</button>
-                </form>
-            </div>
-    </nav>
-    <!-- Contenu principl de la page -->
+    </header>
+   
     <main class="container-fluid p-0 ">
+
         <div class="">
             <img class="img-fluid object-fit-cover"  src="assets/images/concept-de-communaute-avec-la-nature-se-bouchent.jpg" alt="image_ONG_CLORIA">
             <div class="overlay-text text-light fw-bolder responsive-text" style="font-family: Lucida Sans Got;"> 
                 Cuso soutient toutes les femmes en reconnaissant leur leadership et en agissant en faveur de l’égalité.
             </div>
         </div>
+
         <div class="container-fluid container-contenu" data-aos="fade-up" style="background-color: rgb(198, 207, 207);">
             <div class="container-lg d-flex flex-column row-gap-3 p-0">
                 <h1 class="responsive-title1 text-center text-wrap"> Bienvenue chez Cuso International, où nous partageons des compétences pour un avenir meilleur</h1>
@@ -109,9 +81,12 @@
                 </p> 
             </div>
         </div>
+
         <!-- IMPACT DE L'ONG GLOIRE-->
         <div class="container-fluid container-contenu">
+
             <div class="container-lg" data-aos="fade-up" data-aos-delay="100">
+
                 <section class="justify-content-center">
                     <div class="container d-flex flex-column row-gap-2 justify-content-center align-items-center">
                         <h1 class="responsive-title1 text-center">Notre impact mondial</h1>
@@ -123,11 +98,16 @@
                 </section>
             </div>
         </div>
+
         <!-- SECTION MISSION DE L'ONG GLOIRE  -->
         <div class="container-fluid container-contenu justify-content-center align-items-center"  style="background-color: rgb(198, 207, 207);">
+            
             <div class=" p-0" >
+
                 <div class="row container-contenu2">
+
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
                         <section class="Mission d-flex flex-column p-0">
                             <div class="d-flex flex-column row-gap-3">
                                 <h1 class="responsive-title1 text-left text-wrap p-0">Notre Mission : <br> Partager des compétences pour un avenir meilleur</h1>
@@ -136,30 +116,43 @@
                                 </p>
                             </div>                       
                         </section>
+
                     </div>
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
                         <img class="img-fluid rounded-2" src="assets/images/concept-de-communaute-avec-la-nature-se-bouchent (1).jpg" alt="">
                     </div>
-                </div>                
+
+                </div>  
+
             </div>
+
         </div>
+
         <!-- realisations et engagements -->
         <div class="container-fluid container-contenu">
+            
             <div class="container-contenu2 d-flex flex-column gap-3 justify-content-center ">
+                
                 <h1 class="responsive-title1 text-center">Réalisations et engagements</h1>
-                <section class="Prospérité durable border border-2 border-danger" > <!--Prospérité durable -->
+                
+                <section class="Prospérité durable" > <!--Prospérité durable -->
+                    
                     <div class="row d-flex flex-column column-lg-gap-3 row-gap-2 flex-column-reverse flex-lg-row ">
+                        
                         <div class="col col-lg " data-aos="fade-up" data-aos-delay="100">
                             <img class="img-fluid rounded-3" src="assets/images/concept-de-communaute-avec-la-nature-se-bouchent (1).jpg" alt="">
                         </div>
                         <div class="col col-lg" data-aos="fade-up" data-aos-delay="200">
                             <h2 class="responsive-title2">Prospérité durable</h2>
                             <p>Nos programmes ne se limitent pas à offrir des formations : ils connectent les participants à des emplois dignes et à des opportunités entrepreneuriales, permettant un emploi durable et une stabilité financière bénéfique pour les générations futures.</p>
+                        
                         </div>
                     </div>
+
                 </section>
 
                 <section class="Groupes en quête d'équité"> <!--Groupes en quête d'équité -->
+                    
                     <div class="row d-flex flex-column flex-lg-row">
                         <div class="col col-lg-6" data-aos="fade-up" data-aos-delay="100">
                             <h2 class="responsive-title2">Groupes en quête d'équité</h2>
@@ -169,9 +162,11 @@
                             <img class="img-fluid rounded-3" src="assets/images/concept-de-communaute-avec-la-nature-se-bouchent (1).jpg" alt="">
                         </div>
                     </div>
+
                 </section>
 
                 <section class="Prospérité durable"> <!--Prospérité durable -->
+                    
                     <div class="row d-flex flex-column flex-column column-lg-gap-3 row-gap-2 flex-column-reverse flex-lg-row">
                         <div class="col col-lg-6" data-aos="fade-up" data-aos-delay="100">
                             <img class="img-fluid rounded-3" src="assets/images/concept-de-communaute-avec-la-nature-se-bouchent (1).jpg" alt="">
@@ -184,6 +179,7 @@
                 </section>
 
                 <section class="Groupes en quête d'équité"> <!--Catalyser l'innovation sociale-->
+                    
                     <div class="row d-flex flex-column flex-lg-row">
                         <div class="col col-lg-6" data-aos="fade-up" data-aos-delay="100">
                             <h2 class="responsive-title2">Catalyser l'innovation sociale</h2>
@@ -192,10 +188,12 @@
                         <div class="col col-lg-6" data-aos="fade-up" data-aos-delay="200">
                             <img class="img-fluid rounded-3" src="assets/images/concept-de-communaute-avec-la-nature-se-bouchent (1).jpg" alt="">
                         </div>
+                    
                     </div>
+
                 </section>
 
-                <section class="Prospérité durable"> <!--Partenariats mondiaux-->
+                <section class="Prospérité-durable"> <!--Partenariats mondiaux-->
                     <div class="row d-flex flex-column flex-column column-lg-gap-3 row-gap-2 flex-column-reverse flex-lg-row">
                         <div class="col col-lg-6" data-aos="fade-up" data-aos-delay="100">
                             <img class="img-fluid rounded-3" src="assets/images/concept-de-communaute-avec-la-nature-se-bouchent (1).jpg" alt="">
@@ -209,8 +207,11 @@
             </div>
         </div>
 
-        <!-- footer --> <!-- pied de page -->
-    <footer class="container-fluid rounded-top-2 p-5" style=" background-color: #1f233b;">
+     
+    </main>
+    
+    <!-- footer --> <!-- pied de page -->
+    <footer class="container-fluid p-5" style=" background-color: #000000;">
         <div class="container">
             <div class="row d-flex ">
                 <div class="col-6 col-lg p-3">
@@ -241,22 +242,22 @@
                 </div>
                 <!--Nous joindre -->
                 <div class="col-12 col-lg p-3">                    
-                    <section class="d-flex flex-column justify-content-center p-0">
+                    <section class=" Nous-joindre d-flex flex-column justify-content-center p-0">
                         <h3 class="responsive-title1 text-light text-center text-lg-start text-xl-start">Nous joindre</h3>
                         <ul class="list-unstyled p-2 p-lg-0 p-xl-0 d-flex flex-column align-items-center align-items-lg-start">
-                            <li><a href="#" class="text-light text-center text-lg-start text-xl-start">Communiquer avec nous</a></li>
-                            <li><a href="#" class="text-light text-center text-lg-start text-xl-start">Nos dirigeants</a></li>
-                            <li><a href="#" class="text-light text-center text-lg-start text-xl-start">Salle de presse</a></li>
-                            <li><a href="#" class="text-light text-center text-lg-start text-xl-start">exemple@gmail.com</a></li>
-                            <li class="text-light">Telephone : <a href="#" class="text-light">0800000000</a></li>
+                            <li><a href="#" class="">Communiquer avec nous</a></li>
+                            <li><a href="#" class="">Nos dirigeants</a></li>
+                            <li><a href="#" class="">Salle de presse</a></li>
+                            <li><i class="bi bi-envelope"></i><a href="" class=""> </i>exemple@gmail.com</a></li>
+                            <li><i class="bi bi-telephone"></i><a href="#" class="text-light">0800000000</a></li>
                         </ul>
                     </section>
                 </div>
                 <!--Suivez nous sur les reseaux sociaux-->
-                <div class="col col-lg d-flex flex-column p-3  row-gap-3 justify-content-center align-content-center">                    
-                    <div class="container d-flex flex-row justify-content-center align-items-center column-gap-3">
-                        <!-- SVG FACEBOOK -->
-                        <a href="http://www.Facebook.com"><i class="bi bi-facebook"></i></a>
+                <div class=" col col-lg d-flex flex-column p-3  row-gap-3 justify-content-center align-content-center">                    
+                    <div class="reseaux-sociaux container d-flex flex-row justify-content-center align-items-center column-gap-3">
+                            <!-- SVG FACEBOOK -->
+                            <a href="http://www.Facebook.com"><i class="bi bi-facebook"></i></a>
                             <!-- SVG WHATSAPP -->
                             <a href="http://www.Whatsapp.com"><i class="bi bi-whatsapp"></i></a>
                             <!-- SVG INSTAGRAM -->
@@ -275,7 +276,16 @@
         </div>
     </footer>
 
-    </main>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
     <script>

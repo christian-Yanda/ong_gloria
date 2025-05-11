@@ -4,7 +4,9 @@ body {
     color: #333;
     margin: 0;
 }
-
+.back-image{
+    height: 600px;
+}
 .responsive-title1 {
     font-size: 2vw; /* Taille de police responsive basée sur la largeur de la fenêtre */
     font-family: DamingaBold;
@@ -22,6 +24,16 @@ p { /*paragraphe */
     font-family: Century Gothic;
     font-size: 1.6em;
     line-height: 1.6;
+}
+
+.realisations-engagements section{
+    background-color: #f0f0f0;
+    border-radius: 5% 5%;
+    box-shadow: 5px 5px 15px rgba(0,0, 0, 0.3);
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
 }
 .container-contenu{
     padding-left: 15px;

@@ -28,12 +28,11 @@ p { /*paragraphe */
 
 .realisations-engagements section{
     background-color: #f0f0f0;
-    border-radius: 5% 5%;
     box-shadow: 5px 5px 15px rgba(0,0, 0, 0.3);
-    padding-right: 10px;
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-bottom: 50px;
 }
 .container-contenu{
     padding-left: 15px;
@@ -52,7 +51,6 @@ p { /*paragraphe */
 }
 a {
     text-decoration: none;
-    font-weight: bolder;
     color: white;
 }
 a:hover {
@@ -79,6 +77,9 @@ svg:hover{
 }
 
 /* Footer */
+footer{
+    color: #f0f0f0;
+}
 footer .reseaux-sociaux i{
     color: rgb(103, 110, 110);
     font-size: 24px;
@@ -88,18 +89,22 @@ footer .reseaux-sociaux i:hover{
     color: crimson;
 }
 
-footer .Nous-joindre i{
+footer i{
     color: rgb(153, 43, 43);
     font-size: 24px;
 }
 footer a{
     color: #f0f4f7;
 }
+
 footer li{
     display: flex;
-    justify-content: center;
     align-items: center;
     column-gap: 10px;
+}
+.copyright{
+    border-top: 1px solid white;
+    padding-top: 20px;
 }
 /*fin footer */
 
@@ -123,6 +128,21 @@ footer li{
     .container-contenu2{
         padding-left: 15px;
         padding-right: 15px;
+    }
+    footer{
+        font-size: 14px ;
+    }
+    footer h3{
+        font-size: 18px ;
+    }
+    footer ul {
+        padding-left: 10px;
+    }
+    .link-btn{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     /* taille ecran compris entre 320px et 480px */           
 } 

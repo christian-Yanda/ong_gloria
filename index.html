@@ -55,6 +55,9 @@
                   </div>
                   
                 <div class="container-fluid d-xl-none">
+                    <button class="btn" type="button" data-bs-toggle="" data-bs-target="">
+                        <i class="bi bi-search bi-0-square" style="color: white; font-size: 24px;"></i>
+                    </button>
                     <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
                         <i class="bi bi-list bi-0-square" style="color: white; font-size: 24px;"></i>
                     </button>
@@ -210,51 +213,59 @@
     </main>
     
     <!-- footer --> <!-- pied de page -->
-    <footer class="container-fluid p-2" style=" background-color: #000000;">
+    <footer class="container-fluid pt-3 p-2" style=" background-color: #000000;">
         <div class="container-lg">
-            <div class="row d-flex ">
-                <div class="col-6 col-lg p-3">
-                    <section class="justify-content-center ">
-                        <h3 class="responsive-title2 text-light">S'impliquer</h3> 
-                        <ul class="list-unstyled p-0">
-                            <li>
-                                <a href="#" class="text-light">Ancien de Cuso International</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-light">Travailler chez ONG_CLORIA</a>                        
-                            </li>
-                        </ul>
-                    </section>
+            <div class="row d-flex flex-lg-row flex-column ">
+
+                <div class="col p-1"> <!-- Adresse -->
+                  <h3><i class="bi bi-geo-alt"></i>Adresse</h3>
+                  <div class="ps-2">
+                    A108 Adam Street <br>
+                    New York, NY 535022
+                  </div>                  
                 </div>
+
+                <div class="col col-lg p-1"> <!-- contactez-nous-->               
+                  <section class="contact ">
+                      <h3 class="p-0"><i class="bi bi-telephone"></i> Contact </h3>
+                      <ul class="list-unstyled ps-2">
+                          <li><span class="fw-bold">Téléphone : </span><a href="" class=""> +243 816 559 713 </a></li>
+                          <li><span class="fw-bold">Email : </span><a href="" class="">exemple@gmail.com</a></li>
+                      </ul>
+                  </section>
+              </div>
+
+              <div class="col col-lg p-1">
+                <section class="">
+                    <h3 class="">S'impliquer</h3> 
+                    <ul class="list-unstyled ps-2">
+                        <li>
+                            <a href="#" class="">Ancien de Cuso International</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">Travailler chez ONG_CLORIA</a>                        
+                        </li>
+                    </ul>
+                </section>
+            </div>
                 <!--Restez informe sur ONG GLORIA-->
-                <div class="col-6 col-lg p-3">                    
-                    <section class="d-flex flex-column justify-content-center p-0">
-                        <h3 class="responsive-title1 text-light">Restez informé</h3>
-                        <ul class="list-unstyled p-0">
-                            <li><a href="#" class="text-light ">Recit</a></li>
-                            <li><a href="#" class="text-light ">Actualités</a></li>
-                            <li><a href="#" class="text-light ">Publications de L'ONG CLORIA</a></li>
-                            <li><a href="#" class="text-light ">Plan stratégique</a></li>
-                            <li><a href="#" class="text-light ">Politiques</a></li>
+                <div class="col col-lg p-1">                    
+                    <section class="d-flex flex-column p-0">
+                        <h3 class="">Restez informé</h3>
+                        <ul class="list-unstyled ps-2">
+                            <li><a href="#" class="">Recit</a></li>
+                            <li><a href="#" class="">Actualités</a></li>
+                            <li><a href="#" class="">Publications de L'ONG CLORIA</a></li>
+                            <li><a href="#" class="">Plan stratégique</a></li>
+                            <li><a href="#" class="">Politiques</a></li>
                         </ul>
                     </section>
                 </div>
-                <!--Nous joindre -->
-                <div class="col-12 col-lg p-3">                    
-                    <section class=" Nous-joindre d-flex flex-column justify-content-center p-0">
-                        <h3 class="responsive-title1 text-light text-center text-lg-start text-xl-start">Nous joindre</h3>
-                        <ul class="list-unstyled p-2 p-lg-0 p-xl-0 d-flex flex-column align-items-center align-items-lg-start">
-                            <li><a href="#" class="">Communiquer avec nous</a></li>
-                            <li><a href="#" class="">Nos dirigeants</a></li>
-                            <li><a href="#" class="">Salle de presse</a></li>
-                            <li><i class="bi bi-envelope"></i><a href="" class=""> </i>exemple@gmail.com</a></li>
-                            <li><i class="bi bi-telephone"></i><a href="#" class="text-light">0800000000</a></li>
-                        </ul>
-                    </section>
-                </div>
+
                 <!--Suivez nous sur les reseaux sociaux-->
-                <div class=" col col-lg d-flex flex-column p-3  row-gap-3 justify-content-center align-content-center">                    
-                    <div class="reseaux-sociaux container d-flex flex-row justify-content-center align-items-center column-gap-3">
+                <div class=" col col-lg d-flex flex-column p-1  row-gap-1 justify-content-center align-content-center">     
+                    <h3>Suivez-nous</h3>               
+                    <div class="reseaux-sociaux container d-flex flex-row column-gap-3">
                             <!-- SVG FACEBOOK -->
                             <a href="http://www.Facebook.com"><i class="bi bi-facebook"></i></a>
                             <!-- SVG WHATSAPP -->
@@ -273,7 +284,21 @@
                 </div>
             </div>                                   
         </div>
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">ONG-Gloria</strong> <span>Tous droits réservés</span></p>
+            <div class="credits">
+              <!-- All the links in the footer should remain intact. -->
+              <!-- You can delete the links only if you've purchased the pro version. -->
+              <!-- Licensing information: https://bootstrapmade.com/license/ -->
+              <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+              Designed by <a href="#">ChrisMat</a> 
+            </div>
+        </div>
     </footer>
+
+    
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
